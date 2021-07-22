@@ -4,7 +4,7 @@
   "description": "Pruebas automatizadas del sistema de tienda de ropa",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/cypress run"
+    "test": "./node_modules/.bin/cypress open"
   },
   "keywords": [
     "qa",
