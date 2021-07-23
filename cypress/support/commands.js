@@ -23,3 +23,12 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+Cypress.Commands.add('search', (value) => {
+    //Busca un archivo dentro de la carpeta Ficture y trae todos los elementos
+    cy.fixture('index').then((index) => {
+        cy.get(index.searchBox).clear();
+        cy.get(index.searchBox).type(value);
+        cy.get(index.searchButton).click();
+    });
+})

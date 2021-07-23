@@ -1,0 +1,7 @@
+{
+    "login" : ".login",
+    "email" : "#email",
+    "password" : "#passwd",
+    "button" : "#SubmitLogin > span",
+    "message" : "ol > li"
+}
